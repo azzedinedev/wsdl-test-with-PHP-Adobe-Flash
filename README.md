@@ -45,6 +45,8 @@ We have also an Adobe flash file :
 This file contain button to run the call to the WSDL server file and it return the day.
 The source code for this file is the webserice.fla
 
+![Using in flash](https://raw.githubusercontent.com/azzedinedev/wsdl-test-with-PHP-Adobe-Flash/master/screenshots/wsdl-flash.png)
+
 We have a folder contains the examples of WSDL :
 - arrayWSDL.wsdl
 - complexeWSDL.wsdl
