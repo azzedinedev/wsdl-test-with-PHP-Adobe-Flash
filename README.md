@@ -77,26 +77,28 @@ If you have an error :
 Fatal error: Class 'SoapServer' not found in ...\serveur.php on line 39
 You must enabel the soap extension on php.in
 
+![This is an image](https://raw.githubusercontent.com/azzedinedev/wsdl-test-with-PHP-Adobe-Flash/master/screenshots/soap-error.png)
+
 ### Ressource
 
 Look up the following inside your script file
-phpinfo();
+> phpinfo();
 If you can't find Soap Client set to enabled like so:
 
-//image soap-error.png
+> image soap-error.png
 
-Source : <a href = "https://stackoverflow.com/questions/11391442/fatal-error-class-soapclient-not-found">Click here to see the full article</a>
+Source : [Click here to see the full article](https://stackoverflow.com/questions/11391442/fatal-error-class-soapclient-not-found)
 
 ### Diagnose
 
 Look up the following inside your script file
 
-phpinfo();
-If you can't find Soap Client set to enabled like so: the way soap should appear in phpinfo()
+> phpinfo();
+**If you can't find Soap Client set to enabled like so: the way soap should appear in phpinfo()**
 
 ### Fix
 
-Do the following:
+**Do the following:**
 
 Locate php.ini in your apache bin folder, I.e Apache/bin/php.ini
 Remove the ; from the beginning of extension=php_soap.dll
