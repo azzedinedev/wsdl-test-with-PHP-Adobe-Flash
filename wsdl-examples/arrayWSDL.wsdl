@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<definitions name="urn:CompanyInfo"
+             targetNamespace="urn:CompanyInfo"
+             xmlns:typens="urn:CompanyInfo"
+             xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+             xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+             xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+             xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+             xmlns="http://schemas.xmlsoap.org/wsdl/">
+
+  <!-- Results expected..-->
+
+  <types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" 
+                targetNamespace="urn:CompanyInfo">
+            
+      <xsd:complexType name="CompanyInfoResult">
+        <xsd:all>
+          <xsd:element name="jour"		  		type="xsd:string" maxOccurs="unbounded" minOccurs="0"/>
+
+
+
+
+
+
+
+                
+
+
+
+
+
+
+
+
+
+ 
+
+                      
+        </xsd:all>
+      </xsd:complexType>
+
+    </xsd:schema>
+  </types> 
+
+
+
+  <!-- Messages for CompanyInfo - doCompanyInfo. -->
+
+  <message name="doCompanyInfo">
+    <part name="param"       type="xsd:string"/>
+
+
+  </message>
+
+  <message name="QuelJourResponse">
+    <part name="return"         type="typens:CompanyInfoResult"/>           
+  </message>
+
+
+  <portType name="CompanyInfoPort">
+
+    <operation name="QuelJour">
+      <input message="typens:doCompanyInfo"/>
+      <output message="typens:QuelJourResponse"/>
+    </operation>
+
+  </portType>
+
+  
+  <binding name="CompanyInfoBinding" type="typens:CompanyInfoPort">
+    <soap:binding style="rpc"
+                  transport="http://schemas.xmlsoap.org/soap/http"/>
+
+    <operation name="QuelJour">
+      <soap:operation soapAction="urn:CompanyInfoAction"/>
+      <input>
+        <soap:body use="encoded"
+                   namespace="urn:CompanyInfo"
+                   encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+      </input>
+      <output>
+        <soap:body use="encoded"
+                   namespace="urn:CompanyInfo"
+                   encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+      </output>
+    </operation>
+  </binding>
+
+  <!-- Endpoint for CompanyInfo -->
+  <service name="CompanyInfoService">
+  <documentation>Returns an array of detailed company stock and market information for a given ticker.</documentation>
+    <port name="CompanyInfoPort" binding="typens:CompanyInfoBinding">
+      <soap:address location="http://localhost/togithub/wsdl/tests2/serveur.php"/>
+    </port>
+  </service>
+
+</definitions>
