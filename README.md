@@ -77,7 +77,8 @@ If you have an error :
 Fatal error: Class 'SoapServer' not found in ...\serveur.php on line 39
 You must enabel the soap extension on php.in
 
-![This is an image](https://raw.githubusercontent.com/azzedinedev/wsdl-test-with-PHP-Adobe-Flash/master/screenshots/soap-error.png)
+
+ <img src="https://raw.githubusercontent.com/azzedinedev/wsdl-test-with-PHP-Adobe-Flash/master/screenshots/soap-error.png" />
 
 ### Ressource
 
