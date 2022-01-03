@@ -18,7 +18,7 @@
 - [Note about Flash (End of life)](#note-about-flash-end-of-life)
 - [What is Action Script](#what-is-action-script)
 - [How to activate WSDL on PHP](#how-to-activate-wsdl-on-php)
-  - [<a name = "Ressource">Ressource</a>](#ressource)
+  - [Ressource](#ressource)
   - [Diagnose](#diagnose)
   - [Fix](#fix)
 - [Built With](#built-with)
@@ -74,16 +74,18 @@ Flash libraries can be used with the XML capabilities of the browser to render r
 ## How to activate WSDL on PHP
 
 If you have an error : 
-Fatal error: Class 'SoapServer' not found in W:\var\www\togithub\wsdl\serveur.php on line 39
+Fatal error: Class 'SoapServer' not found in ...\serveur.php on line 39
 You must enabel the soap extension on php.in
 
-### <a name = "[Ressource](https://stackoverflow.com/questions/11391442/fatal-error-class-soapclient-not-found)">Ressource</a>
+### Ressource
 
 Look up the following inside your script file
 phpinfo();
 If you can't find Soap Client set to enabled like so:
 
 //image soap-error.png
+
+Source : <a href = "https://stackoverflow.com/questions/11391442/fatal-error-class-soapclient-not-found">Click here to see the full article</a>
 
 ### Diagnose
 
