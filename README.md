@@ -1,14 +1,6 @@
-<p align="center">
-  <a href="" rel="noopener">
- <img src="https://i.imgur.com/AZ2iWek.png" alt="Project logo"></a>
-</p>
-<h3 align="center">Project Title</h3>
+<h3 align="center">Using WSDL with PHP and ACtion Script for Adobe Flash</h3>
 
 ---
-
-<p align="center"> Few lines describing your project.
-    <br> 
-</p>
 
 ## 📝 Table of Contents
 
